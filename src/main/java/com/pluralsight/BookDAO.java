@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import javax.management.Query;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
@@ -89,5 +90,17 @@ public class BookDAO {
         }
 
         return false;
+    }
+
+    public void deleteBook(int id) {
+      String SQL = "DELETE FROM book WHERE id = ?";
+      try {
+          PreparedStatement statement = jdbcConnection.prepareStatement(SQL);
+          statement.setInt(1, id);
+          statement.executeUpdate();
+          statement.close();
+      } catch (SQLException e) {
+          e.printStackTrace();
+      }
     }
 }
