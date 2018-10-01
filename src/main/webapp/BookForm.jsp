@@ -28,7 +28,10 @@
         <c:if test="${book !=}">
             Edit Book Form
         </c:if>
-        New Book Form
+        <c:if test="${book == null}">
+            New Book Form
+        </c:if>
+
     </h2>
 	  <p><label>Title:</label>
     <input type="text" name="booktitle" /></p>
