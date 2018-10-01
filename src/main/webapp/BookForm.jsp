@@ -15,7 +15,8 @@
 
 <div class="container">
     <c:if test="${book != null}">
-        <form name="book_form" method="post" action="update"/>
+
+        <form name="book_form" method="post" action="update"> </form>
 
     </c:if>
 
@@ -34,6 +35,7 @@
 
     </h2>
 	  <p><label>Title:</label>
+
     <input type="text" name="booktitle" /></p>
 	  <p><label>Author:</label>
     <input type="text" name="bookauthor" /></p>
