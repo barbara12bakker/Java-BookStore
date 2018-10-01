@@ -64,6 +64,7 @@ public class ControllerServlet extends HttpServlet {
 					break;
 				case "/edit":
 					showEditForm(request, response);
+					break;
         default:
 				   listBooks(request, response);
            break;
