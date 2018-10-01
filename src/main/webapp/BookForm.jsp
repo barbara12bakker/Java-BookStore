@@ -25,6 +25,9 @@
     </c:if>
 
     <h2>
+        <c:if test="${book !=}">
+            Edit Book Form
+        </c:if>
         New Book Form
     </h2>
 	  <p><label>Title:</label>
