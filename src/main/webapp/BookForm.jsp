@@ -25,15 +25,15 @@
 
     </c:if>
 
-    <h2>
+
         <c:if test="${book != null}">
-            EditBookForm
+           <h2>  </h2>
         </c:if>
         <c:if test="${book == null}">
-            New Book Form
+            <h2> New Book Form </h2>
         </c:if>
 
-    </h2>
+
 	  <p><label>Title:</label>
     <c:if test="${book != null}">
         <input type="hidden" name="id" value="<c:out value='${book.id}' /> "/>
