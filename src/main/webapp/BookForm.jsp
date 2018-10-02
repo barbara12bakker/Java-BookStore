@@ -16,7 +16,7 @@
 <div class="container">
     <c:if test="${book != null}">
 
-        < name="book_form" method="post" action="update">
+        <form name="book_form" method="post" action="update">
 
     </c:if>
 
