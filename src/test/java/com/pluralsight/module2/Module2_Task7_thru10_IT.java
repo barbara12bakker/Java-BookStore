@@ -108,7 +108,7 @@ public class Module2_Task7_thru10_IT {
 			String errorMsg = "";
 			String desiredAction = "";
 			try {
-				if (urlStr.equals("Edit")) {
+				if (urlStr.equals("Edit Book Form")) {
 					form = editPage.getFormByName(BOOK_FORM_NAME);
 					errorMsg = "Form, book_form, action not \"update\".";
 					desiredAction = "update";
