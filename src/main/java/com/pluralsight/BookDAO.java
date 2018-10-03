@@ -109,6 +109,13 @@ public class BookDAO {
                        "WHERE id = ?";
         try {
             PreparedStatement statement = jdbcConnection.prepareStatement(SQL);
+            statement.setString(1, book.getTitle());
+            statement.setString(2, book.getAuthor());
+            statement.setString(3, book.getPrice());
+            statement.setString(4, book.getId());
+
+            statement.executeUpdate();
+            statement.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
