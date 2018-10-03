@@ -33,15 +33,6 @@
 
     </h2>
 
-    <h2>
-        <c:if test="${book != null}">
-            Edit Book Form
-        </c:if>
-        <c:if test="${book == null}">
-            New Book Form
-        </c:if>
-
-    </h2>
 	  <p><label>Title:</label>
     <c:if test="${book != null}">
         <input type="hidden" name="id" value="<c:out value='${book.id}' /> "/>
