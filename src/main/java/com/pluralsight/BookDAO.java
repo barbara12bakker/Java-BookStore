@@ -103,4 +103,8 @@ public class BookDAO {
           e.printStackTrace();
       }
     }
+
+    public void updateBook(Book book) {
+
+    }
 }
